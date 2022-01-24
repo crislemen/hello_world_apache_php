@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-             sh 'docker build -t HELLO_WORLD_PHP_APACHE'
-             sh 'docker run -p 8082:80 HELLO_WORLD_PHP_APACHE'
+             sh 'docker build -t hello_world_apache_php'
+             sh 'docker run -p 8082:80 hello_world_apache_php'
             }
         }
 }
